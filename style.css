@@ -1,0 +1,81 @@
+
+.container-fluid{
+    background-color: #E8E8E8;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./assets/img/libreta.gif);
+}
+
+.centro{
+    border: solid;
+    border-style:dashed;
+    justify-content: center;
+    background-color: #F8F8F8;
+    overflow-y: auto;
+    width: 700px;
+
+
+}
+
+.text{
+    background-color: #acfafa60;
+    height: 90px;
+    text-align: center;
+    align-content: center;
+    border-bottom-style: dotted;
+}
+
+
+.button-color{
+    background-color:#acfafa;
+    color: rgb(36, 30, 30);
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+
+}
+
+.button-color:hover{
+    background-color: #8fc97ec7;
+}
+
+.moverTareas{
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.noMarcado{
+    color: whitesmoke;
+    width: 333px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow-y: auto;
+    padding-top: 15px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+.barra-agregar{
+    width: 259px;
+    display: inline-block;
+}
+
+.button-agregar{
+    display: inline-block;
+}
+
+.Eliminar-button{
+    border: none;
+    background-color: #70656556;
+    margin-top: 27px;
+    margin-left: 5px;
+    padding: 7px;
+}
+
+.Eliminar-button:hover{
+    background-color: #ee6e6e;
+}
+
+
