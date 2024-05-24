@@ -1,11 +1,12 @@
 
+/* Padre que encierra todo */
 .container-fluid{
     background-color: #E8E8E8;
     justify-content: center;
     height: 100vh;
     background-image: url(./assets/img/libreta.gif);
 }
-
+/* Hijo del padre */
 .centro{
     border: solid;
     border-style:dashed;
@@ -17,6 +18,7 @@
 
 }
 
+/* Encabezado */
 .text{
     background-color: #acfafa60;
     height: 90px;
@@ -25,25 +27,33 @@
     border-bottom-style: dotted;
 }
 
+/* Input de Nueva Tarea */
+.barra-agregar{
+    width: 259px;
+    display: inline-block;
+}
 
+
+/* Boton que agrega tarea */
 .button-color{
     background-color:#acfafa;
     color: rgb(36, 30, 30);
     border: none;
     border-radius: 10px;
     height: 45px;
-
+    display: inline-block;
 }
 
 .button-color:hover{
     background-color: #8fc97ec7;
 }
 
-.moverTareas{
-    margin-left: 10px;
-    margin-right: 40px;
+/* div que contiene agregar tarea */
+.button-agregar{
+    display: inline-block;
 }
 
+/* Check desactivado */
 .noMarcado{
     color: whitesmoke;
     width: 333px;
@@ -51,31 +61,14 @@
     margin-top: 20px;
     overflow-y: auto;
     padding-top: 15px;
+    padding-left: 10px;
 }
 
-.btn{
-    margin-top: 20px;
-}
-
-.barra-agregar{
-    width: 259px;
-    display: inline-block;
-}
-
-.button-agregar{
-    display: inline-block;
-}
-
+/* Icono eliminar */
 .Eliminar-button{
     border: none;
-    background-color: #70656556;
-    margin-top: 27px;
+    margin-top: 25px;
     margin-left: 5px;
-    padding: 7px;
+    padding: 10px;
+    border-radius: 10px;
 }
-
-.Eliminar-button:hover{
-    background-color: #ee6e6e;
-}
-
-

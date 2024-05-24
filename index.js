@@ -1,10 +1,9 @@
-//Boton de crear
 const btnTarea = document.querySelector('#btnTarea')
-//Input donde se escribe la tarea
+
  const creaTarea = document.querySelector('#creaTarea')
 let value = ''
 
-//Evento para capturar el valor del input
+
 creaTarea.addEventListener('change', (e) => {
     value = e.target.value
  })
@@ -39,7 +38,7 @@ const crearTareita = () => {
             </div>
         </div>
         <div>
-        <button id='btnDelete-${contador}' class='Eliminar-button '><img src="./assets/img/papelera.png" alt="Eliminar"></button>  
+        <button id='btnDelete-${contador}' class='Eliminar-button btn btn-danger'><img src="./assets/img/papelera.svg" alt="Eliminar"></button>  
     </div>
  </div>
     `
