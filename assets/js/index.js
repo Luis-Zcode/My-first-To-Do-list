@@ -15,12 +15,12 @@ const action = () => {
 let contador = 0
 const crearTareita = () => {
    
-    if(value.trim().length == 0){
-        alert('Ingrese una tarea');return
-    }
+if(value.trim().length == 0){
+    alert('Ingrese una tarea');return
+}
 
-    if(value != '')
-    {
+if(value != '')
+{
 
     contador = contador +1;
     const div = 
@@ -43,30 +43,30 @@ const crearTareita = () => {
 creaTarea.value = ''
 value = ''
 
-    const tareas = document.querySelector('#tareas')
-    tareas.insertAdjacentHTML('afterbegin', div) 
+const tareas = document.querySelector('#tareas')
+tareas.insertAdjacentHTML('afterbegin', div) 
 
-    const CheckboxCreado = document.querySelector(`#tarea-${contador}`)
-    const ParrafoCreado = document.querySelector(`#parrafo-${contador}`)
-    const Color = document.querySelector(`#color`)
-    const padre = document.querySelector(`#padre-${contador}`)
+const CheckboxCreado = document.querySelector(`#tarea-${contador}`)
+const ParrafoCreado = document.querySelector(`#parrafo-${contador}`)
+const Color = document.querySelector(`#color`)
+const padre = document.querySelector(`#padre-${contador}`)
    
-    CheckboxCreado.addEventListener('click', () => {
-        ParrafoCreado.classList.toggle('text-decoration-line-through')
+CheckboxCreado.addEventListener('click', () => {
+    ParrafoCreado.classList.toggle('text-decoration-line-through')
 
-        if(Color.classList.item(2) == 'bg-danger'){
-            Color.classList.replace('bg-danger', 'bg-success')
-        }else if(Color.classList.item(2) == 'bg-success'){
-            Color.classList.replace('bg-success', 'bg-danger')
-        }
+    if(Color.classList.item(2) == 'bg-danger'){
+        Color.classList.replace('bg-danger', 'bg-success')
+    }else if(Color.classList.item(2) == 'bg-success'){
+        Color.classList.replace('bg-success', 'bg-danger')
+    }
 
     })
     
-    const btnDelete= document.querySelector(`#btnDelete-${contador}`)
+const btnDelete= document.querySelector(`#btnDelete-${contador}`)
 
-    btnDelete.addEventListener('click', () => {
-        padre.remove()
-    })
+btnDelete.addEventListener('click', () => {
+    padre.remove()
+})
 }
 }
 
