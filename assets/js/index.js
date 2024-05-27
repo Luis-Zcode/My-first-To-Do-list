@@ -3,7 +3,6 @@ const btnTarea = document.querySelector('#btnTarea')
  const creaTarea = document.querySelector('#creaTarea')
 let value = ''
 
-
 creaTarea.addEventListener('change', (e) => {
     value = e.target.value
  })
@@ -12,7 +11,6 @@ const action = () => {
     const textUno = document.querySelector('#textUno')
     textUno.classList.toggle("text-decoration-line-through")
 }
-
 
 let contador = 0
 const crearTareita = () => {
@@ -24,7 +22,6 @@ const crearTareita = () => {
     if(value != '')
     {
 
-
     contador = contador +1;
     const div = 
     `
@@ -33,7 +30,7 @@ const crearTareita = () => {
             <div class="form-check moverTareas">
                 <input id='tarea-${contador}' class="form-check-input" type="checkbox" value="" >
                 <label class="form-check-label" for="defaultCheck1">
-                <p class='centrarParrafo' id="parrafo-${contador}">${value}</p>
+                    <p class='centrarParrafo' id="parrafo-${contador}">${value}</p>
                 </label>
             </div>
         </div>
@@ -43,8 +40,8 @@ const crearTareita = () => {
  </div>
     `
  
-    creaTarea.value = ''
-    value = ''
+creaTarea.value = ''
+value = ''
 
     const tareas = document.querySelector('#tareas')
     tareas.insertAdjacentHTML('afterbegin', div) 

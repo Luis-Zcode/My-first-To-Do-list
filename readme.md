@@ -2,5 +2,4 @@
 
 Un To Do List hecho con html, css, js y Bootstrap
 
-![alt text](<To Do List.png>)
-
+![alt text](ToDoList.png)
