@@ -25,7 +25,7 @@ const crearTareita = () => {
     contador = contador +1;
     const div = 
     `
-<div id='padre-${contador}' class='d-flex'>
+    <div id='padre-${contador}' class='d-flex'>
         <div id='color' class='d-flex noMarcado bg-danger'>
             <div class="form-check moverTareas">
                 <input id='tarea-${contador}' class="form-check-input" type="checkbox" value="" >
@@ -35,9 +35,9 @@ const crearTareita = () => {
             </div>
         </div>
         <div>
-        <button id='btnDelete-${contador}' class='Eliminar-button btn btn-danger'><img src="./assets/img/papelera.svg" alt="Eliminar"></button>  
+            <button id='btnDelete-${contador}' class='Eliminar-button btn btn-danger'><img src="./assets/img/papelera.svg" alt="Eliminar"></button>  
+        </div>
     </div>
- </div>
     `
  
 creaTarea.value = ''
